@@ -1,0 +1,166 @@
+.cart-main {
+  background: $cus-bg;
+  color: $cus-color;
+  padding: 5%;
+  .cart-menu {
+    float: left;
+    width: 30%;
+    @include pad-v-1 {
+      float: none;
+      width: 90%;
+      margin-bottom: 5%;
+    }
+    h3 {
+      font-size: 24px;
+      padding-bottom: 8%;
+    }
+    .fa-leaf {
+      font-size: 36px;
+    }
+    li {
+      width: 90%;
+      @include pad-v-1 {
+        width: 50%;
+      }
+    }
+    a {
+      display: block;
+      color: $cus-color;
+      padding: 5% 0 5% 3%;
+      border-bottom: 1px solid $cus-color;
+    }
+    a:hover {
+      background: $cus-color;
+      color: #fff;
+    }
+  }
+  .cart-content {
+    float: left;
+    width: 65%;
+    margin-left: 2%;
+    @include pad-v-1 {
+      width: 95%;
+      float: none;
+    }
+    .cart-header {
+      .fa-search::before {
+        display: inline-block;
+        background: $cus-color;
+        color: #fff;
+        padding: 63%;
+        position: relative;
+        left: -43px;
+        top: 1px;
+        @include pad-v {
+          top: 2px;
+          left: -40px;
+          padding: 59%;
+        }
+        @include pad-v-1 {
+          display: none;
+        }
+      }
+    }
+  }
+  .pure-form input[type=search] {
+    padding: 1%;
+    width: 60%;
+    border-radius: 0;
+    border: 2px solid $cus-color;
+    @include pad-v-1 {
+      width: 90%;
+    }
+  }
+  .pure-form input[type=search]:focus {
+    border-color: $cus-color;
+  }
+  form {
+    padding: 0;
+  }
+  form.pure-form {
+    display: inline;
+  }
+  #shopping-cart-link {
+    display: inline-block;
+    float: right;
+    @include pad-v-1 {
+      display: none;
+    }
+  }
+  .fa-shopping-cart {
+    font-size: 26px;
+    color: $cus-color;
+  }
+  .cart-products {
+    ul {
+      display: inline-block;
+      margin-top: 5%;
+    }
+    li {
+      float: left;
+      display: inline-table;
+      position: relative;
+      width: 31.33333%;
+      margin: 0 2% 5% 0;
+      text-align: center;
+      box-shadow: 5px 5px 10px grey;
+      padding: .5%;
+      @include pad-v {
+        width: 47%;
+      }
+      @include pad-v-1 {
+        width: 90%;
+      }
+    }
+    a {
+      display: block;
+      padding: 3% 5%;
+      border: 1px solid #f56c23;
+      color: #f56c23;
+      margin-bottom: 3%;
+      border-radius: 5px;
+    }
+    a:hover, a:focus {
+      background: #f56c23;
+      color: #fff;
+    }
+    h4 {
+      font-size: 20px;
+      margin: 6% 0 5% 0;
+      letter-spacing: 2px;
+    }
+    .hr {
+      width: 50%;
+      margin: 0 auto;
+      border: 1px solid $cus-color;
+    }
+    span {
+      display: inline;
+    }
+  }
+  .cart-products-title {
+    padding-bottom: 5%;
+  }
+  .cart-products-price {
+    padding: 10%;
+    font-size: 20px;
+    i {
+      font-style: italic;
+    }
+  }
+  .far.fa-heart {
+    display: inline;
+    
+  }
+  .fa-heart::before {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  .far.fa-heart:hover, .far.fa-heart:focus {
+    font-weight: bold;
+  }
+}

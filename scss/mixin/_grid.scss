@@ -1,0 +1,85 @@
+@mixin desktop-b {
+  @media (max-width: 1280px) {
+    @content
+  }
+}
+@mixin desktop-m {
+  @media (max-width: 1024px) {
+    @content
+  }
+}
+@mixin desktop-m-1 {
+  @media (max-width: 1023px) {
+    @content
+  }
+}
+@mixin desktop-s {
+  @media (max-width: 960px) {
+    @content
+  }
+}
+@mixin pad-v {
+  @media (max-width: 768px) {
+    @content
+  }
+}
+@mixin pad-v-1 {
+  @media (max-width: 767px) {
+    @content
+  }
+}
+@mixin pad-h {
+  @media (max-width: 1024px) {
+    @content
+  }
+}
+@mixin iphone5-v {
+  @media (max-width: 320px) {
+    @content
+  }
+}
+@mixin iphone5-h {
+  @media (max-width: 568px) {
+    @content
+  }
+}
+@mixin iphone6-v {
+  @media (max-width: 375px) {
+    @content
+  }
+}
+@mixin iphone6-h {
+  @media (max-width: 667px) {
+    @content
+  }
+}
+@mixin iphone6-plus-v {
+  @media (max-width: 414px) {
+    @content
+  }
+}
+@mixin iphone6-plus-v-1 {
+  @media (max-width: 413px) {
+    @content
+  }
+}
+@mixin iphone6-plus-h {
+  @media (max-width: 736px) {
+    @content
+  }
+}
+@mixin iphoneX-v {
+  @media (max-width: 375px) {
+    @content
+  }
+}
+@mixin iphoneX-h {
+  @media (max-width: 812px) {
+    @content
+  }
+}
+@mixin customer-860 {
+  @media (max-width: 860px) {
+    @content
+  }
+}

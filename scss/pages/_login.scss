@@ -1,0 +1,88 @@
+.login-content {
+  background: $cus-bg;
+  padding-bottom: 3%;
+  h2, p, h3 {
+    text-align: center;
+    color: $cus-color;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 1%;
+    padding-top: 5%;
+  }
+  p {
+    font-size: 20px;
+  }
+  .login-form {
+    margin-top: 3%;
+    border-top: 3px solid #ff5e45;
+    box-shadow: 5px 5px 10px grey;
+    a {
+      display: block;
+      color: #ff5e45;
+      padding-bottom: 10%;
+    }
+  }
+}
+.login-form {
+  width: 35%;
+  margin: 0 auto;
+  @include pad-v-1 {
+    width: 60%;
+  }
+}
+.pure-form legend {
+  border-bottom: none;
+  text-align: center;
+  padding-top: 5%;
+  color: $cus-color;
+  font-weight: bold;
+  font-size: 24px;
+}
+#register-button {
+  background: #9b9796;
+  margin-bottom: 1%;
+  @include pad-v-1 {
+    margin-bottom: .5%;
+  }
+}
+#login-button {
+  background: #ff5e45;
+}
+.pure-form-stacked label {
+  color: $cus-color;
+}
+.pure-form fieldset {
+  padding: .35em .5em .75em;
+}
+.pure-button {
+  width: 100%;
+  @include pad-v-1 {
+    padding: 0.8em 0;
+  }
+}
+.pure-form input[type=email], .pure-form input[type=password] {
+  width: 100%;
+  padding: .5em .6em .5em 3em;
+  @include pad-v-1 {
+    padding: .5em .6em;
+  }
+}
+.pure-form input[type="email"]:focus, .pure-form input[type=password]:focus {
+  border-color: $cus-color;
+}
+.fa-envelope::before, .fa-key::before {
+  color: #c3b5b0;
+  font-weight: bold;
+  font-size: 26px;
+  position: relative;
+  top: -38px;
+  left: 15px;
+  @include pad-v-1 {
+    display: none;
+  }
+}
+form {
+  padding: 5%;
+}
