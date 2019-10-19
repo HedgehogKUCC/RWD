@@ -28,10 +28,10 @@
       color: $cus-color;
       padding: 5% 0 5% 3%;
       border-bottom: 1px solid $cus-color;
-    }
-    a:hover {
-      background: $cus-color;
-      color: #fff;
+      &:hover {
+        background: $cus-color;
+        color: #fff;
+      }
     }
   }
   .cart-content {
@@ -81,7 +81,7 @@
     display: inline;
   }
   #shopping-cart-link {
-    display: inline-block;
+    display: block;
     float: right;
     @include pad-v-1 {
       display: none;
@@ -119,10 +119,10 @@
       color: #f56c23;
       margin-bottom: 3%;
       border-radius: 5px;
-    }
-    a:hover, a:focus {
-      background: #f56c23;
-      color: #fff;
+      &:hover, &:focus {
+        background: #f56c23;
+        color: #fff;
+      }
     }
     h4 {
       font-size: 20px;
@@ -150,7 +150,6 @@
   }
   .far.fa-heart {
     display: inline;
-    
   }
   .fa-heart::before {
     position: absolute;

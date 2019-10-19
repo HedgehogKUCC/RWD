@@ -82,11 +82,11 @@
             color: $cus-color;
             display: inline-block;
           }
-        }
-        a:focus {
-          @include iphone6-plus-v {
-              background: $cus-color;
-              color: #fff;
+          &:focus {
+            @include iphone6-plus-v {
+                background: $cus-color;
+                color: #fff;
+            }
           }
         }
       }
