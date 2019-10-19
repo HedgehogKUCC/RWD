@@ -49,6 +49,7 @@ table {
   border-spacing: 0;
 }
 
+/* ================== Reset Css End ================== */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -60,10 +61,10 @@ img {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 
-/* ================== Reset Css End ================== */
 .wrap {
   max-width: 1024px;
   margin: 0 auto;
@@ -121,7 +122,6 @@ a {
 }
 
 .header .top-bar h1 a {
-  display: block;
   background: url(../images/logo_header.svg) no-repeat;
   width: 120px;
   height: 24px;
@@ -169,7 +169,6 @@ a {
 }
 
 .header .top-bar .menu a {
-  display: block;
   margin-right: 30px;
   color: #fff;
 }
@@ -368,7 +367,6 @@ a {
 }
 
 .footer .community-website li a {
-  display: block;
   font-size: 32px;
   text-indent: 10px;
 }
@@ -840,7 +838,6 @@ a {
 }
 
 .login-content .login-form a {
-  display: block;
   color: #ff5e45;
   padding-bottom: 10%;
 }
@@ -971,7 +968,6 @@ form {
 }
 
 .cart-main .cart-menu a {
-  display: block;
   color: #441a0a;
   padding: 5% 0 5% 3%;
   border-bottom: 1px solid #441a0a;
@@ -1090,7 +1086,6 @@ form {
 }
 
 .cart-main .cart-products a {
-  display: block;
   padding: 3% 5%;
   border: 1px solid #f56c23;
   color: #f56c23;
