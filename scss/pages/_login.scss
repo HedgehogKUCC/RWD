@@ -62,15 +62,15 @@
     padding: 0.8em 0;
   }
 }
-.pure-form input[type=email], .pure-form input[type=password] {
+.pure-form input[type="email"], .pure-form input[type="password"] {
   width: 100%;
   padding: .5em .6em .5em 3em;
+  &:focus, &:focus {
+    border-color: $cus-color;
+  }
   @include pad-v-1 {
     padding: .5em .6em;
   }
-}
-.pure-form input[type="email"]:focus, .pure-form input[type=password]:focus {
-  border-color: $cus-color;
 }
 .fa-envelope::before, .fa-key::before {
   color: #c3b5b0;

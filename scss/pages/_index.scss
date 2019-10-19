@@ -58,19 +58,19 @@
           margin: 0 auto;
           padding-bottom: 1%;
         }
-        img {
-          display: block;
-          margin: 0 auto;
-        }
-        h5 {
-          text-align: center;
-          margin-top: 25px;
-          font-size: 18px;
-        }
-        p {
-          padding: 18px;
-          line-height: 1.2;
-        }
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      h5 {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 18px;
+      }
+      p {
+        padding: 18px;
+        line-height: 1.2;
       }
     }
   } // cus-alw-ques END
@@ -158,13 +158,13 @@
       }
       .es-text {
         margin-left: 80px;
-        h5 {
-          line-height: 67px;
-        }
-        p {
-          line-height: 1.5;
-          margin-bottom: 10%;
-        }
+      }
+      h5 {
+        line-height: 67px;
+      }
+      p {
+        line-height: 1.5;
+        margin-bottom: 10%;
       }
       span {
         display: block;
@@ -230,6 +230,9 @@
       margin-bottom: 15px;
       caret-color: $cus-color;
       outline: none;
+      &:focus {
+        border: 1px solid $cus-color;
+      }
       @include desktop-m-1 {
         float: left;
         width: 60%;
@@ -238,9 +241,6 @@
         // width: 30%;
         margin-left: 20%;
       }
-    }
-    .form-text:focus {
-      border: 1px solid $cus-color;
     }
     .form-radio {
       display: inline-block;

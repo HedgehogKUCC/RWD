@@ -73,20 +73,20 @@
           border-bottom: 1px dashed $cus-color;
           padding: 5px;
         }
-        a {
-          display: block;
-          margin-right: 30px;
-          color: #fff;
+      }
+      a {
+        display: block;
+        margin-right: 30px;
+        color: #fff;
+        @include iphone6-plus-v {
+          transition: all .5s;
+          color: $cus-color;
+          display: inline-block;
+        }
+        &:focus {
           @include iphone6-plus-v {
-            transition: all .5s;
-            color: $cus-color;
-            display: inline-block;
-          }
-          &:focus {
-            @include iphone6-plus-v {
-                background: $cus-color;
-                color: #fff;
-            }
+              background: $cus-color;
+              color: #fff;
           }
         }
       }
