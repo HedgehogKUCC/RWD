@@ -1,0 +1,22 @@
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+@mixin hide-text {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@mixin wrap($max-width) {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+@mixin footer($bg-color, $color) {
+  background: $bg-color;
+  height: auto;
+  color: $color;
+  padding-bottom: 2%;
+}

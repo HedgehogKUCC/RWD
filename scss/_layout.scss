@@ -1,6 +1,5 @@
 .wrap {
-  max-width: 1024px;
-  margin: 0 auto;
+  @include wrap(1024px);
 }
 .header {
   position: relative;
@@ -139,10 +138,7 @@
   }
 }
 .footer {
-  background: $cus-bg;
-  height: auto;
-  color: $cus-color;
-  padding-bottom: 2%;
+  @include footer($cus-bg, $cus-color);
   .about, .contact, .community-website {
     margin-top: 45px;
     @include pad-v-1 {
