@@ -43,7 +43,7 @@
       }
     }
     ul {
-      float: right;
+      // float: right;
       width: 100%;
       @include pad-v-1 {
         float: none;
@@ -138,7 +138,7 @@
       letter-spacing: 2px;
     }
     ul {
-      float: right;
+      // float: right;
       margin-top: 20px;
       @include pad-v-1 {
         float: none;
@@ -164,7 +164,7 @@
       }
       p {
         line-height: 1.5;
-        margin-bottom: 10%;
+        margin-bottom: 1.5em;
       }
       span {
         display: block;
@@ -218,7 +218,7 @@
         line-height: 2;
       }
     }
-    .form form {
+    .form {
       padding: 0;
     }
     .form-text {

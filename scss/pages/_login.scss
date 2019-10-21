@@ -8,14 +8,14 @@
   h2 {
     font-weight: bold;
     font-size: 50px;
-    margin-bottom: 1%;
-    padding-top: 5%;
+    margin-bottom: .3em;
+    padding-top: 1em;
   }
   p {
     font-size: 20px;
   }
   .login-form {
-    margin-top: 3%;
+    margin-top: 2.5em;
     border-top: 3px solid #ff5e45;
     box-shadow: 5px 5px 10px grey;
     a {
@@ -39,14 +39,11 @@
   font-weight: bold;
   font-size: 24px;
 }
-#register-button {
+.register-button {
   background: #9b9796;
-  margin-bottom: 1%;
-  @include pad-v-1 {
-    margin-bottom: .5%;
-  }
+  margin-bottom: .5em;
 }
-#login-button {
+.login-button {
   background: #ff5e45;
 }
 .pure-form-stacked label {
@@ -57,8 +54,17 @@
 }
 .pure-button {
   width: 100%;
+  &:hover, &:focus {
+    background: $cus-bg;
+    color: $cus-color;
+  }
   @include pad-v-1 {
     padding: 0.8em 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .pure-form button[type=submit] {
+    margin: 0 0 .5em 0;
   }
 }
 .pure-form input[type="email"], .pure-form input[type="password"] {
