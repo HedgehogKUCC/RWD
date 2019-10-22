@@ -1,8 +1,6 @@
-.content {
-  color: $cus-color;
   .cus-alw-ques {
     height: auto;
-    background: $cus-bg;
+    background: $cus-secondary;
     h4 {
       text-align: center;
       white-space: pre;
@@ -100,7 +98,7 @@
     .article {
       float: left;
       max-width: 45%;
-      color: $cus-bg;
+      color: $cus-secondary;
       padding: 6.5% 11% 0 0;
       letter-spacing: 1px;
       @include desktop-m-1 {
@@ -130,7 +128,7 @@
   } // today-chef END
 
   .ex-share {
-    background: $cus-bg;
+    background: $cus-secondary;
     h4 {
       text-align: center;
       font-size: 26px;
@@ -180,7 +178,7 @@
     padding-bottom: 4%;
     background: #f6f4f3;
     
-    .map-form-title {
+    &-title {
       padding: 50px 0 38px 0 ;
       font-size: 26px;
       p {
@@ -218,9 +216,6 @@
         line-height: 2;
       }
     }
-    .form {
-      padding: 0;
-    }
     .form-text {
       width: 45%;
       height: 32px;
@@ -228,10 +223,10 @@
       border-radius: 10px;
       padding: 5px 10px;
       margin-bottom: 15px;
-      caret-color: $cus-color;
+      caret-color: $cus-primary;
       outline: none;
       &:focus {
-        border: 1px solid $cus-color;
+        border: 1px solid $cus-primary;
       }
       @include desktop-m-1 {
         float: left;
@@ -269,12 +264,12 @@
       float: right;
       padding: 7px 20px;
       border-radius: 5px;
-      color: #fff;
+      color: $cus-light;
       cursor: pointer;
     }
     #submit {
       margin-right: 4.1%;
-      background: #f56c23;
+      background: $cus-warning;
       &:hover {
         background: red;
       }
@@ -288,6 +283,8 @@
     #reset {
       margin-right: 3%;
       background: #a09e9e;
+      &:hover {
+        background: #000;
+      }
     }
   } // map-form END
-}

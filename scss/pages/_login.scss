@@ -1,9 +1,9 @@
 .login-content {
-  background: $cus-bg;
+  background: $cus-secondary;
   padding-bottom: 3%;
   h2, p, h3 {
     text-align: center;
-    color: $cus-color;
+    color: $cus-primary;
   }
   h2 {
     font-weight: bold;
@@ -35,7 +35,7 @@
   border-bottom: none;
   text-align: center;
   padding-top: 5%;
-  color: $cus-color;
+  color: $cus-primary;
   font-weight: bold;
   font-size: 24px;
 }
@@ -47,7 +47,7 @@
   background: #ff5e45;
 }
 .pure-form-stacked label {
-  color: $cus-color;
+  color: $cus-primary;
 }
 .pure-form fieldset {
   padding: .35em .5em .75em;
@@ -55,8 +55,8 @@
 .pure-button {
   width: 100%;
   &:hover, &:focus {
-    background: $cus-bg;
-    color: $cus-color;
+    background: $cus-secondary;
+    color: $cus-primary;
   }
   @include pad-v-1 {
     padding: 0.8em 0;
@@ -71,23 +71,25 @@
   width: 100%;
   padding: .5em .6em .5em 3em;
   &:focus, &:focus {
-    border-color: $cus-color;
+    border-color: $cus-primary;
   }
   @include pad-v-1 {
     padding: .5em .6em;
   }
 }
-.fa-envelope::before, .fa-key::before {
-  color: #c3b5b0;
-  font-weight: bold;
-  font-size: 26px;
-  position: relative;
-  top: -38px;
-  left: 15px;
-  @include pad-v-1 {
-    display: none;
+.fa-envelope, .fa-key {
+  width: 0;
+  height: 0;
+  display: block;
+  &::before, &::before {
+    color: #c3b5b0;
+    font-weight: bold;
+    font-size: 26px;
+    position: relative;
+    top: -38px;
+    left: 15px;
+    @include pad-v-1 {
+      display: none;
+    }
   }
-}
-form {
-  padding: 5%;
 }
