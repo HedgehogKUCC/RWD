@@ -32,25 +32,8 @@
   </head>
   <body>
     <div class="wrap">
-      <div class="header">
-        <div class="top-bar clearfix">
-          <h1><a href="#">六角西餐廳</a></h1>
-          <ul class="menu">
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="login.html">登入</a></li>
-            <li><a href="cart.html">購物車</a></li>
-          </ul>
-          <a href="#" class="show-menu  color-primary bg-primary">MENU</a>
-          <div class="banner">
-            <h2>咬一口就無法忘懷的漢堡</h2>
-            <p>七夕絕對無法錯過的好滋味</p>
-            <p>
-              <span class="fas fa-utensils"></span> 六角大漢堡
-              <span class="fas fa-utensils"></span>
-            </p>
-          </div>
-        </div>
-      </div>
+      <div w3-include-html="header.html"></div>
+
      <div class="cart-main color-primary bg-primary p-3 clearfix">
       <div class="cart-menu">
         <h3><i class="fas fa-leaf"></i> 線上訂購美食</h3>
@@ -113,33 +96,14 @@
         </div>
       </div>
     </div>
-     <div class="footer clearfix">
-      <div class="about">
-        <h3>關於 六角西餐廳</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consec adipisicing elit. Nam tempore
-          rerum quisquam dignissimos possimus quod. Nesciunt aspernatur enim !
-        </p>
-      </div>
-      <div class="contact">
-        <h3>聯絡方式</h3>
-        <ul>
-          <li>高雄市中正五路到底</li>
-          <li>+886 886 886</li>
-          <li>service@hexschool.com</li>
-        </ul>
-      </div>
-      <div class="community-website">
-        <h3></h3>
-        <ul>
-          <li><a href="#" class="fab fa-google-plus-square"></a></li>
-          <li><a href="#" class="fab fa-twitter-square"></a></li>
-          <li><a href="#" class="fab fa-facebook-square"></a></li>
-        </ul>
-      </div>
-    </div>
+    <div w3-include-html="footer.html"></div>
     <!-- 載入 javascript -->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/w3.js"></script>
     <script type="text/javascript" src="js/all.js"></script>
+    <script>
+      w3.includeHTML();
+    </script>
+  
   </body>
 </html>
