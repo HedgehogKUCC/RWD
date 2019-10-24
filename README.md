@@ -18,7 +18,7 @@
 
 <h3 id="Pr-business-card"> Pr-business-card </h3>
 
-瞭解 基本 **HTML** 和 **CSS** 的 `float` `position`
+瞭解 基本 **HTML** 和 **CSS** 的 `float` `position`
 
 藉由實作來瞭解自己對於課程的吸收
 
