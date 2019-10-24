@@ -1,6 +1,11 @@
 # 版本說明
 
-## v1.0.0
+- [v1.0.0](#v1) - [載點](https://github.com/HedgehogKUCC/RWD/releases/tag/v1.0.0)
+- [v2.0.0](#v2) - [載點](https://github.com/HedgehogKUCC/RWD/releases/tag/v2.0.0) - [網頁預覽](https://hedgehogkucc.github.io/RWD/index.html)
+
+<hr>
+
+<h2 id="v1"> v1.0.0 </h2>
 
 結合了以下所學到觀念與實作技術
 
@@ -13,7 +18,7 @@
 
 <h3 id="Pr-business-card"> Pr-business-card </h3>
 
-瞭解 基本**HTML** 和 **CSS**的`float`&`position`
+瞭解 基本 **HTML** 和 **CSS** 的 `float` `position`
 
 藉由實作來瞭解自己對於課程的吸收
 
@@ -87,7 +92,7 @@
 
 從 `pure.css` 學習每個瀏覽器的相容寫法及套用樣式
 
-初學 `Sass` 開始管理 **css**
+初學 `Sass` 管理 **css** -- [30天掌握SASS語法](https://ithelp.ithome.com.tw/articles/10126703)
 
 ***Code Review***
 
@@ -97,7 +102,10 @@
 
 - 請勿使用 `id` 綁定網頁樣式
 
-[GitHub](https://hedgehogkucc.github.io/RWD/index.html) &nbsp; &nbsp; &nbsp; [作品預覽](https://hedgehogkucc.github.io/RWD/index.html)
+<hr>
 
+<br>
+
+<h2 id="v2"> v2.0.0 </h2>
 
 
