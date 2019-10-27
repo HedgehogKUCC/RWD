@@ -1,7 +1,8 @@
 # 版本說明
 
 - [v1.0.0](#v1) - [載點](https://github.com/HedgehogKUCC/RWD/releases/tag/v1.0.0)
-- [v2.0.0](#v2) - [載點](https://github.com/HedgehogKUCC/RWD/releases/tag/v2.0.0) - [網頁預覽](https://hedgehogkucc.github.io/RWD/index.html)
+- [v2.0.0](#v2) - [載點](https://github.com/HedgehogKUCC/RWD/releases/tag/v2.0.0)
+- [網頁預覽](https://hedgehogkucc.github.io/RWD/index.html)
 
 <hr>
 
@@ -40,9 +41,9 @@
 
 進階瞭解 `head` 資訊設定
 
-這靜態網頁有給予 `.psd` 來使用 `Photoshop` 切版工具
+這靜態網頁有給 `.psd` 來使用 `Photoshop` 切版工具
 
-還有輔助使用 `MarkMan` 量測出各個數值
+還有輔助使用 `MarkMan` 量測數值
 
 ***Code Review***
 
@@ -52,7 +53,7 @@
 
 - 一個網頁上只會有一個 `h1` !!!
 
-- Form表單不需要使用 `br` 來斷行, 可以在 `input` 加上 `display:block` 讓內容向下排列 .
+- **Form表單**不需要使用 `br` 來斷行, 可以在 `input` 加上 `display:block` 讓內容向下排列 .
 
 [GitHub](https://github.com/HedgehogKUCC/HTML-CSS) &nbsp; &nbsp; &nbsp; [作品預覽](https://hedgehogkucc.github.io/HTML-CSS/index.html)
 
@@ -62,7 +63,7 @@
 
 從 `jQuery` 快速瞭解網頁互動效果是怎麼操作 **CSS**
 
-用瀏覽器 `Chrome` `檢查` 和 `Safari` `開發 -> 網頁檢閱器` 來查看網頁
+使用瀏覽器 `Chrome` `檢查` 或 `Safari` `開發 -> 網頁檢閱器`
 
 在 `Console` 使用 `jQuery` 抓取 `HTML標籤` 進行網頁的動畫效果
 
@@ -92,13 +93,13 @@
 
 從 `pure.css` 學習每個瀏覽器的相容寫法及套用樣式
 
-初學 `Sass` 管理 **css** -- [30天掌握SASS語法](https://ithelp.ithome.com.tw/articles/10126703)
+初學 `Sass` -- [30天掌握SASS語法](https://ithelp.ithome.com.tw/articles/10126703)
 
 ***Code Review***
 
 - 指定階層不超過**四層**, 階層愈多會導致網頁渲染速度變慢 !
 
-- 上下推擠不要用 `%` 改用 `em`, 例如: `margin-top` `margin-bottom` , 原因是跟行距有關係 !
+- 上下推擠不要用 `%` 改用 `em`, 例如: `margin-top` `margin-bottom` , 原因是跟行距有關係 !  [文章](https://www.slideshare.net/sfismy/vertical-rhythm)
 
 - 請勿使用 `id` 綁定網頁樣式
 
@@ -108,4 +109,34 @@
 
 <h2 id="v2"> v2.0.0 </h2>
 
+使用設計模式優化
+
+[SMACSS](http://smacss.com/)
+
+- `Base` 
+- `Layout` 
+- `Module` 
+- `State` 
+- `Theme`
+
+在 `all.scss` 有將 `import` 細分出 `variable` `mixin` `reset` `base` `module` `layout` `page`
+
+以購物車頁面構想出擴增 `.l-list` 子模組化, 讓之後不同產品都可以直接套用 !
+
+在 `_base.scss` 加上 `pure base` 中只擷取 `Forms` 來當自己的基底
+
+使用 `pure.css` 擴充專案所需的 module --- `buttons` `forms`
+
+[OOCSS](https://wcc723.github.io/css/2016/12/02/oocss-one/)
+
+- 結構與樣式分離
+- 內容與容器分離
+
+將網頁主色調寫成樣式 `.color-primary` `.bg-primary`
+
+另外將常用的功能獨立成 **class** 來使用
+
+<hr>
+
+<br>
 
